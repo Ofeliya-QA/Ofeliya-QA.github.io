@@ -1,4 +1,8 @@
 
+html {
+  cursor: url("./cof.png") 40 45, auto;
+}
+
 body {
   font-family: Roboto, sans-serif;
 }
@@ -14,6 +18,7 @@ a {
   text-decoration:none;
   margin-bottom: 1.2em;
   position: relative;
+  cursor: url("./cof2.png") 40 45, auto;
 }
 
   /* Что делать при наведении на ссылку */
