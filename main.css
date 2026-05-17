@@ -1,32 +1,62 @@
+/* Подключаем шрифт Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* Основные стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Кастомный курсор для всей страницы */
 html {
   cursor: url("./cof.png") 40 45, auto;
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .container {
   padding: 0 40px;
   margin-left: 80px;
+  max-width: 800px;
 }
 
-  /* Свойства ссылок */
+h1 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.25em 0 0.5em 0;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 1.1em;
+}
+
+/* Свойства ссылок */
 a {
   display: block;
-  text-decoration:none;
+  text-decoration: none;
   margin-bottom: 1.2em;
   position: relative;
+  color: #0066cc;
+  /* Кастомный курсор для ссылок (ваш cof2) */
+  cursor: url("./cof2.png") 40 45, auto;
 }
 
-  /* Что делать при наведении на ссылку */
+/* Что делать при наведении на ссылку */
 a:hover {
-  color:#FFD700;
+  color: #FFD700;
 }
 
-  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+/* Подчеркивание через псевдокласс */
 a::after {
   content: '';
   position: absolute;
@@ -35,29 +65,41 @@ a::after {
   transform: translateY(1.5em);
   border-bottom: 1px solid #dadada;
   width: 300px;
+  /* Тоже меняем курсор для подчеркивания */
   cursor: url("./cof2.png") 40 45, auto;
 }
 
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.5em;
-  margin: 1.25em 0;
-}
-
-  /* Свойства фотографии*/
+/* Свойства фотографии */
 .photo {
   border-radius: 100px;
-  /* Радиус скругления */
   border: 3px solid transparent;
-  /* Параметры рамки */
   box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
   object-fit: cover;
 }
 
-  /* Эффект наведения на картинку */
+/* Эффект наведения на картинку */
 .photo:hover {
   border: 3px solid #FFD700;
+}
+
+/* Стиль для кнопки */
+button {
+  margin-top: 30px;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #FFD700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05);
+}
+
+/* Контакты */
+.contacts {
+  margin: 20px 0;
 }
