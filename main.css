@@ -18,7 +18,6 @@ a {
   text-decoration:none;
   margin-bottom: 1.2em;
   position: relative;
-  cursor: url("./cof2.png") 40 45, auto;
 }
 
   /* Что делать при наведении на ссылку */
@@ -35,6 +34,7 @@ a::after {
   transform: translateY(1.5em);
   border-bottom: 1px solid #dadada;
   width: 300px;
+  cursor: url("./cof2.png") 40 45, auto;
 }
 
 h1 {
